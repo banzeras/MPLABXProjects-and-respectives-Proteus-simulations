@@ -1,0 +1,1378 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 F6 F6 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\RelogioComLCDePIC.X.production.obj
+intcodelo CODE 0 18 18 DE 1
+cinit CODE 0 1584 1584 58 1
+text0 CODE 0 F70 F70 11C 1
+text1 CODE 0 E40 E40 130 1
+text2 CODE 0 14CC 14CC 5C 1
+text3 CODE 0 12D0 12D0 9E 1
+text4 CODE 0 B12 B12 1DC 1
+text5 CODE 0 1528 1528 5C 1
+text6 CODE 0 179A 179A 3E 1
+text7 CODE 0 18F6 18F6 2E 1
+text8 CODE 0 CEE CEE 152 1
+text9 CODE 0 1718 1718 42 1
+text10 CODE 0 15DC 15DC 52 1
+text11 CODE 0 18C2 18C2 34 1
+text12 CODE 0 16D2 16D2 46 1
+text13 CODE 0 1462 1462 6A 1
+text14 CODE 0 188A 188A 38 1
+text15 CODE 0 866 866 2AC 1
+text16 CODE 0 1816 1816 3A 1
+text17 CODE 0 1A28 1A28 8 1
+text18 CODE 0 175A 175A 40 1
+text19 CODE 0 1924 1924 2C 1
+text20 CODE 0 108C 108C D2 1
+text21 CODE 0 115E 115E CE 1
+text22 CODE 0 1976 1976 1E 1
+text23 CODE 0 1950 1950 26 1
+text24 CODE 0 13F2 13F2 70 1
+text25 CODE 0 136E 136E 84 1
+text26 CODE 0 1994 1994 1E 1
+text27 CODE 0 19B2 19B2 1E 1
+text28 CODE 0 122C 122C A4 1
+text29 CODE 0 17D8 17D8 3E 1
+text30 CODE 0 162E 162E 52 1
+text31 CODE 0 1A30 1A30 8 1
+text32 CODE 0 19F8 19F8 10 1
+text33 CODE 0 19D0 19D0 16 1
+text34 CODE 0 1850 1850 3A 1
+text35 CODE 0 1A38 1A38 8 1
+text36 CODE 0 1A08 1A08 10 1
+text38 CODE 0 1A40 1A40 8 1
+text39 CODE 0 1680 1680 52 1
+text40 CODE 0 1A48 1A48 8 1
+text41 CODE 0 1A18 1A18 10 1
+idataCOMRAM CODE 0 1A50 1A50 1 1
+cstackCOMRAM COMRAM 1 1 1 2E 1
+cstackBANK0 BANK0 1 83 83 16 1
+temp COMRAM 1 49 49 1 1
+bssBANK0 BANK0 1 60 60 23 1
+smallconst SMALLCONST 0 800 800 66 1
+idataBANK0 CODE 0 19E6 19E6 12 1
+dataBANK0 BANK0 1 99 99 12 1
+dataCOMRAM COMRAM 1 48 48 1 1
+bssCOMRAM COMRAM 1 2F 2F 19 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM AB-7FF 1
+SFR F60-FFF 1
+BANK0 AB-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-17 1
+CONST FA-7FF 1
+CONST 1A51-7FFF 1
+STACK AB-7FF 1
+SMALLCONST 1A51-7FFF 1
+CODE 4-17 1
+CODE FA-7FF 1
+CODE 1A51-7FFF 1
+BIGRAM 4A-5F 1
+BIGRAM AB-7FF 1
+COMRAM 4A-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1A51-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\RelogioComLCDePIC.X.production.obj
+18 intcodelo CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+18 intcodelo CODE >104:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+5E intcodelo CODE >108:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+62 intcodelo CODE >110:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+64 intcodelo CODE >111:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+6A intcodelo CODE >112:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+6E intcodelo CODE >113:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+72 intcodelo CODE >114:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+72 intcodelo CODE >117:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+7A intcodelo CODE >118:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+7C intcodelo CODE >122:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+80 intcodelo CODE >126:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+84 intcodelo CODE >127:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+98 intcodelo CODE >129:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+9A intcodelo CODE >131:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A0 intcodelo CODE >133:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A4 intcodelo CODE >134:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A6 intcodelo CODE >135:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+AA intcodelo CODE >136:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+AE intcodelo CODE >145:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A18 text41 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+1A1A text41 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+1A22 text41 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+1A48 text40 CODE >74:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A48 text40 CODE >75:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A4E text40 CODE >76:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1680 text39 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1682 text39 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1686 text39 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+168A text39 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16A6 text39 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16A8 text39 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16AA text39 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16AE text39 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16B0 text39 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16B4 text39 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16B6 text39 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16BA text39 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16C0 text39 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16C4 text39 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16C6 text39 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16CA text39 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+16CC text39 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1A40 text38 CODE >99:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A40 text38 CODE >100:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A46 text38 CODE >102:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A08 text36 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+1A0A text36 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+1A12 text36 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+1A38 text35 CODE >74:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A38 text35 CODE >75:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A3E text35 CODE >76:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1850 text34 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1850 text34 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1852 text34 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1854 text34 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1858 text34 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+185A text34 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+185E text34 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1862 text34 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1864 text34 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1868 text34 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+186A text34 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+186E text34 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1870 text34 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1872 text34 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1874 text34 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1876 text34 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1876 text34 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1878 text34 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+187C text34 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+187E text34 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1882 text34 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1884 text34 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+1886 text34 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+19D0 text33 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10ktcyx.c
+19D2 text33 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10ktcyx.c
+19E0 text33 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10ktcyx.c
+19F8 text32 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d1ktcyx.c
+19FA text32 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d1ktcyx.c
+1A02 text32 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d1ktcyx.c
+1A30 text31 CODE >78:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A30 text31 CODE >79:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+162E text30 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1630 text30 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1634 text30 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1638 text30 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1654 text30 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1656 text30 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1658 text30 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+165C text30 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+165E text30 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1662 text30 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1664 text30 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1668 text30 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+166E text30 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1672 text30 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1674 text30 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+1678 text30 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+167A text30 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+17D8 text29 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17DA text29 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17DE text29 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17E2 text29 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17EA text29 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17EC text29 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17EE text29 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17F2 text29 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17F4 text29 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17F8 text29 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17FA text29 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+17FE text29 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+1804 text29 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+1808 text29 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+180A text29 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+180E text29 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+1810 text29 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+122C text28 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+122E text28 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1232 text28 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1236 text28 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1238 text28 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+123A text28 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+123C text28 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+123E text28 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1240 text28 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1242 text28 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1246 text28 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+124C text28 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1252 text28 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1258 text28 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+125E text28 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1264 text28 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+126E text28 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1278 text28 CODE >59:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+127E text28 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1288 text28 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+128E text28 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+1298 text28 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+129E text28 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+12A8 text28 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+12AE text28 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+12B8 text28 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+12BE text28 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+12C8 text28 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+19B2 text27 CODE >241:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+19B2 text27 CODE >242:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+19B8 text27 CODE >243:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+19C2 text27 CODE >244:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+19C8 text27 CODE >245:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+19CE text27 CODE >246:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1994 text26 CODE >395:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1994 text26 CODE >396:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1996 text26 CODE >398:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+199A text26 CODE >399:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+199E text26 CODE >401:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+19A6 text26 CODE >402:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+19AA text26 CODE >403:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+19AC text26 CODE >405:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+136E text25 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+136E text25 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+1372 text25 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+1376 text25 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+137E text25 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+1382 text25 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+1386 text25 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+138E text25 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+1392 text25 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+139A text25 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13A2 text25 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13A6 text25 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13A8 text25 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13AE text25 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13B0 text25 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13B4 text25 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13BA text25 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13C6 text25 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13CE text25 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13D0 text25 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13D6 text25 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13DA text25 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13E0 text25 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13E8 text25 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+13F2 text24 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+13F2 text24 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+13F6 text24 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+13FA text24 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1402 text24 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1406 text24 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+140A text24 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1412 text24 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+141A text24 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+141E text24 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1420 text24 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1426 text24 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1428 text24 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+142C text24 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1438 text24 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1440 text24 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1446 text24 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+144A text24 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1450 text24 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1458 text24 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+1950 text23 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+1950 text23 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+195C text23 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+1964 text23 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+196C text23 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+1976 text22 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\isdigit.c
+1978 text22 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\isdigit.c
+115E text21 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+115E text21 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+1160 text21 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+1164 text21 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+1184 text21 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+118C text21 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+1190 text21 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+11A0 text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+11A4 text21 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+11B4 text21 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+11B6 text21 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+11F0 text21 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+1202 text21 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+1208 text21 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+1222 text21 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+122A text21 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\atoi.c
+108C text20 CODE >354:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+108C text20 CODE >358:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1090 text20 CODE >360:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1098 text20 CODE >361:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+10A2 text20 CODE >365:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+10C4 text20 CODE >369:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+10EC text20 CODE >370:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1104 text20 CODE >371:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+110A text20 CODE >367:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1112 text20 CODE >366:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1114 text20 CODE >373:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1122 text20 CODE >375:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1126 text20 CODE >376:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+112E text20 CODE >377:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1154 text20 CODE >379:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1924 text19 CODE >409:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1924 text19 CODE >413:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1940 text19 CODE >415:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1946 text19 CODE >416:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+194A text19 CODE >418:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+194E text19 CODE >419:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+175A text18 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\memcpy.c
+175A text18 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\memcpy.c
+1762 text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\memcpy.c
+176A text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\memcpy.c
+176C text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\memcpy.c
+1788 text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\memcpy.c
+1A28 text17 CODE >99:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A28 text17 CODE >100:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1A2E text17 CODE >102:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1816 text16 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strlen.c
+1816 text16 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strlen.c
+181E text16 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strlen.c
+1820 text16 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strlen.c
+1824 text16 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strlen.c
+1832 text16 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strlen.c
+866 text15 CODE >421:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+866 text15 CODE >424:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+868 text15 CODE >426:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+868 text15 CODE >428:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+86C text15 CODE >429:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+870 text15 CODE >432:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+872 text15 CODE >435:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+872 text15 CODE >437:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+876 text15 CODE >438:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+87C text15 CODE >444:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+87C text15 CODE >445:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+880 text15 CODE >446:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+884 text15 CODE >447:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+896 text15 CODE >448:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+89A text15 CODE >449:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+89E text15 CODE >450:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8B0 text15 CODE >451:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8B4 text15 CODE >452:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8B8 text15 CODE >453:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8C8 text15 CODE >456:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8C8 text15 CODE >457:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8CC text15 CODE >458:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8D0 text15 CODE >459:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8E2 text15 CODE >460:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8E6 text15 CODE >461:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8EA text15 CODE >462:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+8FC text15 CODE >463:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+906 text15 CODE >465:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+908 text15 CODE >466:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+908 text15 CODE >467:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+90C text15 CODE >468:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+910 text15 CODE >469:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+922 text15 CODE >470:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+926 text15 CODE >471:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+92A text15 CODE >472:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+93C text15 CODE >473:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+940 text15 CODE >479:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+942 text15 CODE >432:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+95C text15 CODE >481:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+95E text15 CODE >488:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+986 text15 CODE >489:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+98E text15 CODE >490:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+992 text15 CODE >494:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+994 text15 CODE >499:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+99C text15 CODE >500:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+9A4 text15 CODE >501:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+9A6 text15 CODE >504:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+9AA text15 CODE >505:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+9C2 text15 CODE >506:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+9DA text15 CODE >507:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+9F2 text15 CODE >508:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A0A text15 CODE >509:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A1A text15 CODE >510:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A1E text15 CODE >511:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A24 text15 CODE >512:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A26 text15 CODE >515:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A3E text15 CODE >516:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A56 text15 CODE >517:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A6E text15 CODE >518:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A86 text15 CODE >521:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A88 text15 CODE >523:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+A9E text15 CODE >524:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+AB4 text15 CODE >525:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+ACA text15 CODE >526:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+AE0 text15 CODE >532:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+AE2 text15 CODE >494:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+AFC text15 CODE >536:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+AFE text15 CODE >424:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B0C text15 CODE >540:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B10 text15 CODE >541:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+188A text14 CODE >382:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+188A text14 CODE >386:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18A2 text14 CODE >388:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18A6 text14 CODE >389:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18B6 text14 CODE >386:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18BC text14 CODE >392:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18C0 text14 CODE >393:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1462 text13 CODE >543:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1462 text13 CODE >546:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1466 text13 CODE >549:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1482 text13 CODE >550:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1488 text13 CODE >551:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+148E text13 CODE >553:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14B6 text13 CODE >554:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14BA text13 CODE >560:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14C0 text13 CODE >562:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14C4 text13 CODE >563:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14C6 text13 CODE >567:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16D2 text12 CODE >573:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16D2 text12 CODE >575:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16D4 text12 CODE >578:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16D8 text12 CODE >580:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16DA text12 CODE >584:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16DE text12 CODE >586:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16E0 text12 CODE >589:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16E4 text12 CODE >590:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16E6 text12 CODE >593:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16EC text12 CODE >595:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16EE text12 CODE >598:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16F4 text12 CODE >607:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+16F6 text12 CODE >575:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18C2 text11 CODE >248:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18C2 text11 CODE >249:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18C8 text11 CODE >250:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18F0 text11 CODE >251:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18F4 text11 CODE >252:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+15DC text10 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+15DC text10 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+15E4 text10 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+15EC text10 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+15F0 text10 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+15F2 text10 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+15F8 text10 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+15FA text10 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+15FE text10 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1604 text10 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1610 text10 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1618 text10 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+161A text10 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1620 text10 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1624 text10 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1624 text10 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+162C text10 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1718 text9 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1718 text9 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1720 text9 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1724 text9 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1726 text9 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+172C text9 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+172E text9 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1732 text9 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+173E text9 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1746 text9 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+174C text9 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1750 text9 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1750 text9 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1758 text9 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+CEE text8 CODE >492:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+CEE text8 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+CF6 text8 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+CF8 text8 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D00 text8 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D12 text8 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D14 text8 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D18 text8 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D40 text8 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D58 text8 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D5C text8 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D60 text8 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D68 text8 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D74 text8 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D94 text8 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+D98 text8 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+DA4 text8 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+DB6 text8 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+DBA text8 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+DBC text8 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+DFE text8 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+E10 text8 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+E18 text8 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+E32 text8 CODE >1538:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+18F6 text7 CODE >171:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+18F6 text7 CODE >173:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+191A text7 CODE >174:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+179A text6 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+179C text6 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17A0 text6 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17A4 text6 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17AC text6 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17AE text6 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17B0 text6 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17B4 text6 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17B6 text6 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17BA text6 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17BC text6 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17C0 text6 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17C6 text6 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17CA text6 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17CC text6 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17D0 text6 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+17D2 text6 CODE >59:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+1528 text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putrxlcd.c
+1528 text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putrxlcd.c
+152A text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putrxlcd.c
+1534 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putrxlcd.c
+1558 text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putrxlcd.c
+155C text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putrxlcd.c
+B12 text4 CODE >257:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B16 text4 CODE >259:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B1E text4 CODE >260:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B20 text4 CODE >261:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B26 text4 CODE >262:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B2A text4 CODE >265:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B2C text4 CODE >267:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B32 text4 CODE >268:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B3E text4 CODE >269:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B44 text4 CODE >270:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B50 text4 CODE >271:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B5C text4 CODE >273:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B5E text4 CODE >275:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B64 text4 CODE >276:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+B70 text4 CODE >277:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+BBC text4 CODE >278:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+BC8 text4 CODE >279:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+BCE text4 CODE >280:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+BDA text4 CODE >281:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C16 text4 CODE >282:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C22 text4 CODE >283:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C3A text4 CODE >284:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C3E text4 CODE >285:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C44 text4 CODE >286:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C46 text4 CODE >287:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C48 text4 CODE >288:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C4E text4 CODE >289:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C52 text4 CODE >290:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C56 text4 CODE >291:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C58 text4 CODE >292:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C5C text4 CODE >295:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C5E text4 CODE >297:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C64 text4 CODE >298:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C70 text4 CODE >299:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C76 text4 CODE >300:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+C82 text4 CODE >301:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+CBE text4 CODE >302:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+CCA text4 CODE >303:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+CD6 text4 CODE >305:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+CD8 text4 CODE >265:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12D0 text3 CODE >308:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12D0 text3 CODE >309:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12D8 text3 CODE >310:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12E0 text3 CODE >311:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12E6 text3 CODE >312:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12EC text3 CODE >314:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12EE text3 CODE >315:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12F4 text3 CODE >316:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12F8 text3 CODE >317:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+12FA text3 CODE >319:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1308 text3 CODE >320:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+130C text3 CODE >321:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1310 text3 CODE >324:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1316 text3 CODE >325:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1318 text3 CODE >326:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1320 text3 CODE >325:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1326 text3 CODE >330:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+132C text3 CODE >331:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1332 text3 CODE >333:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1334 text3 CODE >334:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+133A text3 CODE >335:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+133E text3 CODE >336:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1340 text3 CODE >339:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+134E text3 CODE >340:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1352 text3 CODE >341:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1356 text3 CODE >343:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+135C text3 CODE >344:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+135E text3 CODE >345:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1366 text3 CODE >344:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14CC text2 CODE >149:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14CC text2 CODE >150:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14E0 text2 CODE >151:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14FC text2 CODE >152:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+14FE text2 CODE >153:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1500 text2 CODE >156:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+151C text2 CODE >157:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+151E text2 CODE >158:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1520 text2 CODE >160:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1522 text2 CODE >163:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1524 text2 CODE >165:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E40 text1 CODE >177:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E40 text1 CODE >178:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E44 text1 CODE >179:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E4C text1 CODE >180:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E52 text1 CODE >181:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E56 text1 CODE >182:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E5E text1 CODE >183:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E64 text1 CODE >184:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E68 text1 CODE >185:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E6C text1 CODE >186:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E74 text1 CODE >187:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E7A text1 CODE >188:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E7E text1 CODE >189:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E86 text1 CODE >190:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E8C text1 CODE >191:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E90 text1 CODE >192:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E98 text1 CODE >193:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+E9E text1 CODE >194:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+EA2 text1 CODE >196:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+EB4 text1 CODE >197:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+EBA text1 CODE >198:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+EC0 text1 CODE >199:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+EC4 text1 CODE >200:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+EC8 text1 CODE >201:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+ED0 text1 CODE >202:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+ED6 text1 CODE >203:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+EDA text1 CODE >205:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F08 text1 CODE >206:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F0E text1 CODE >207:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F14 text1 CODE >208:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F18 text1 CODE >209:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F1C text1 CODE >210:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F24 text1 CODE >211:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F2A text1 CODE >212:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F2E text1 CODE >214:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F36 text1 CODE >215:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F3C text1 CODE >216:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F42 text1 CODE >217:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F48 text1 CODE >218:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F4E text1 CODE >219:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F60 text1 CODE >220:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F66 text1 CODE >221:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F68 text1 CODE >224:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F6E text1 CODE >234:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F70 text0 CODE >611:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F70 text0 CODE >612:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F74 text0 CODE >613:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F78 text0 CODE >614:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F7C text0 CODE >616:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F80 text0 CODE >622:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F84 text0 CODE >623:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F88 text0 CODE >625:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F8A text0 CODE >626:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F8C text0 CODE >627:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F8E text0 CODE >629:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F90 text0 CODE >630:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F92 text0 CODE >633:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F94 text0 CODE >634:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F96 text0 CODE >635:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F98 text0 CODE >636:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+F9A text0 CODE >641:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FA0 text0 CODE >642:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FA6 text0 CODE >643:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FAC text0 CODE >644:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FB2 text0 CODE >645:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FB8 text0 CODE >646:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FBE text0 CODE >647:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FC4 text0 CODE >649:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FCA text0 CODE >650:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FD0 text0 CODE >651:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FD6 text0 CODE >652:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FDC text0 CODE >653:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FE2 text0 CODE >654:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FEC text0 CODE >655:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FF2 text0 CODE >656:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FF8 text0 CODE >658:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+FFC text0 CODE >659:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1000 text0 CODE >660:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1004 text0 CODE >661:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1008 text0 CODE >662:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+100C text0 CODE >664:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+100E text0 CODE >665:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1010 text0 CODE >666:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1012 text0 CODE >667:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1014 text0 CODE >668:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1016 text0 CODE >669:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1018 text0 CODE >670:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+101A text0 CODE >671:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+101C text0 CODE >672:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+101E text0 CODE >673:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1026 text0 CODE >674:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1028 text0 CODE >675:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+102A text0 CODE >676:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+102C text0 CODE >679:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1030 text0 CODE >683:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1034 text0 CODE >684:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+103E text0 CODE >685:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1048 text0 CODE >686:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+104E text0 CODE >688:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1054 text0 CODE >690:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1056 text0 CODE >691:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1060 text0 CODE >690:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+106A text0 CODE >695:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1070 text0 CODE >697:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1076 text0 CODE >698:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+107A text0 CODE >699:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+107E text0 CODE >703:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1086 text0 CODE >704:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+108A text0 CODE >682:C:\Users\Marco\MPLABXProjects\RelogioComLCDePIC.X\main.c
+1584 cinit CODE >678:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1584 cinit CODE >680:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1584 cinit CODE >683:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1584 cinit CODE >763:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1586 cinit CODE >764:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1588 cinit CODE >765:C:\Users\Marco\AppData\Local\Temp\sc8c.
+158A cinit CODE >766:C:\Users\Marco\AppData\Local\Temp\sc8c.
+158C cinit CODE >767:C:\Users\Marco\AppData\Local\Temp\sc8c.
+158E cinit CODE >768:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1590 cinit CODE >769:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1594 cinit CODE >770:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1598 cinit CODE >771:C:\Users\Marco\AppData\Local\Temp\sc8c.
+1598 cinit CODE >772:C:\Users\Marco\AppData\Local\Temp\sc8c.
+159A cinit CODE >773:C:\Users\Marco\AppData\Local\Temp\sc8c.
+159E cinit CODE >774:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15A0 cinit CODE >775:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15A2 cinit CODE >776:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15A4 cinit CODE >780:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15A6 cinit CODE >781:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15A8 cinit CODE >782:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15AA cinit CODE >783:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15AC cinit CODE >784:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15AE cinit CODE >785:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15B0 cinit CODE >786:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15B2 cinit CODE >787:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15B6 cinit CODE >791:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15BA cinit CODE >792:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15BC cinit CODE >793:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15BC cinit CODE >794:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15BE cinit CODE >795:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15C0 cinit CODE >796:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15C2 cinit CODE >799:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15C6 cinit CODE >800:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15C8 cinit CODE >801:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15C8 cinit CODE >802:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15CA cinit CODE >803:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15CC cinit CODE >804:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15CE cinit CODE >810:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15CE cinit CODE >812:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15D0 cinit CODE >813:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15D2 cinit CODE >815:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15D4 cinit CODE >816:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15D6 cinit CODE >817:C:\Users\Marco\AppData\Local\Temp\sc8c.
+15D8 cinit CODE >818:C:\Users\Marco\AppData\Local\Temp\sc8c.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_i 3C 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+___awdiv@counter 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+WriteCmdXLCD@cmd 18 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwmod@counter 22 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_printaDisplay 1A30 0 CODE 0 text17 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hspace_1 AB 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+?_converteAnoString 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\RelogioComLCDePIC.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\RelogioComLCDePIC.X.production.obj
+_Delay10TCYx 1A08 0 CODE 0 text36 dist/default/production\RelogioComLCDePIC.X.production.obj
+_Delay1KTCYx 19F8 0 CODE 0 text32 dist/default/production\RelogioComLCDePIC.X.production.obj
+i1SetDDRamAddr@DDaddr 5 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+verificaCRCBUFFCOM@CRC_OK 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\RelogioComLCDePIC.X.production.obj
+_PEIE 7F96 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_RCIE 7CED 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_RCIF 7CF5 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_RCIP 7CFD 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_TMR0 FD6 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_TXIF 7CF4 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+_atoi 115E 0 CODE 0 text21 dist/default/production\RelogioComLCDePIC.X.production.obj
+_cont 3A 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_main F70 0 CODE 0 text0 dist/default/production\RelogioComLCDePIC.X.production.obj
+btemp 49 0 COMRAM 1 temp dist/default/production\RelogioComLCDePIC.X.production.obj
+start F6 0 CODE 0 init C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_ofi1_SetDDRamAddr 16D2 0 CODE 0 text39 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_atoi 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_botaoMin 37 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+verificaCRCBUFFCOM@crc 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+?___wmul 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hpowerup F6 0 CODE 0 powerup dist/default/production\RelogioComLCDePIC.X.production.obj
+converteAnoString@anoStr 93 0 BANK0 1 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+___awmod@sign 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_T0CONbits FD5 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_calculaCRCBUFFRESP 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+intlevel0 0 0 CODE 0 text C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+intlevel1 0 0 CODE 0 text C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+intlevel2 0 0 CODE 0 text C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+intlevel3 0 0 CODE 0 text C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+__size_of_acionaDespertador 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_ofi1_DelayFor18TCY 1A50 0 CODE 0 text40 dist/default/production\RelogioComLCDePIC.X.production.obj
+_tx_data 188A 0 CODE 0 text14 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\RelogioComLCDePIC.X.production.obj
+___awdiv@sign 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\RelogioComLCDePIC.X.production.obj
+__pidataCOMRAM 1A50 0 CODE 0 idataCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+___wmul@multiplicand 19 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_flagDespertadorLigado 39 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+___awdiv@dividend 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_Delay10KTCYx 19D0 0 CODE 0 text33 dist/default/production\RelogioComLCDePIC.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+i1Delay10TCYx@unit 1 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_maquinaEstado 16D2 0 CODE 0 text12 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of___wmul 1976 0 CODE 0 text23 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_BusyXLCD 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\RelogioComLCDePIC.X.production.obj
+i1_Delay10TCYx 1A18 0 CODE 0 text41 dist/default/production\RelogioComLCDePIC.X.production.obj
+_tempoDespertador 36 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hintcodelo F6 0 CODE 0 intcodelo dist/default/production\RelogioComLCDePIC.X.production.obj
+___awdiv@divisor 19 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+Delay1KTCYx@unit 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwmod@divisor 20 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of___awdiv 13F2 0 CODE 0 text25 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of___awmod 1462 0 CODE 0 text24 dist/default/production\RelogioComLCDePIC.X.production.obj
+crc16@data 20 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+verificaAnoBissexto@ano 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of___lwdiv 162E 0 CODE 0 text10 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of___lwmod 175A 0 CODE 0 text9 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_converteAnoString 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+i1_DelayFor18TCY 1A48 0 CODE 0 text40 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_pic_isr 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+?_strlen 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_dpowers 801 0 SMALLCONST 0 smallconst dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_trata_relogio_data 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwdiv@quotient 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_crc16 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_Delay10KTCYx 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_verificaCRCBUFFCOM 14CC 0 CODE 0 text13 dist/default/production\RelogioComLCDePIC.X.production.obj
+_BUFFRESP 7C 0 BANK0 1 bssBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+_WriteDataXLCD 179A 0 CODE 0 text6 dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwmod@dividend 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\RelogioComLCDePIC.X.production.obj
+OpenXLCD@lcdtype 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_DelayFor18TCY 1A38 0 CODE 0 text35 dist/default/production\RelogioComLCDePIC.X.production.obj
+start_initialization 1584 0 CODE 0 cinit dist/default/production\RelogioComLCDePIC.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_TRISBbits F93 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_TRISCbits F94 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+putrsXLCD@buffer 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+tx_data@cont 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_BusyXLCD 1850 0 CODE 0 text34 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_memcpy 179A 0 CODE 0 text18 dist/default/production\RelogioComLCDePIC.X.production.obj
+__pcstackBANK0 83 0 BANK0 1 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_Delay10KTCYx 19E6 0 CODE 0 text33 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_acionaDespertador 18F6 0 CODE 0 text11 dist/default/production\RelogioComLCDePIC.X.production.obj
+_TMR0IF 7F92 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_BusyXLCD 188A 0 CODE 0 text34 dist/default/production\RelogioComLCDePIC.X.production.obj
+_verificaCRCBUFFCOM 1462 0 CODE 0 text13 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_strlen 1850 0 CODE 0 text16 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwdiv@counter 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_atualiza_Tela B12 0 CODE 0 text4 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_maquinaEstado 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\RelogioComLCDePIC.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+__size_of_verificaAnoBissexto 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_sprintf E40 0 CODE 0 text8 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_ofi1_Delay10TCYx 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+crc16@crc 22 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_Delay10TCYx 1A18 0 CODE 0 text36 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_Delay1KTCYx 1A08 0 CODE 0 text32 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_isdigit 1994 0 CODE 0 text22 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\RelogioComLCDePIC.X.production.obj
+_flagSegundo 3B 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_ofi1_DelayFor18TCY 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_pic_isr F6 0 CODE 0 intcodelo dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\RelogioComLCDePIC.X.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_PORTDbits F83 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+memcpy@d1 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+memcpy@s1 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_SetDDRamAddr 162E 0 CODE 0 text30 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hinit FA 0 CODE 0 init dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htemp 4A 0 COMRAM 1 temp dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\RelogioComLCDePIC.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\RelogioComLCDePIC.X.production.obj
+__Linit F6 0 CODE 0 init dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltemp 49 0 COMRAM 1 temp dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\RelogioComLCDePIC.X.production.obj
+memcpy@d 23 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+memcpy@n 21 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+memcpy@s 25 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_trataComando 866 0 CODE 0 text15 dist/default/production\RelogioComLCDePIC.X.production.obj
+___wmul 1950 0 CODE 0 text23 dist/default/production\RelogioComLCDePIC.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+int$flags 49 0 COMRAM 1 temp dist/default/production\RelogioComLCDePIC.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\RelogioComLCDePIC.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__S1 AB 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_vet 74 0 BANK0 1 bssBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_converteAnoString 1924 0 CODE 0 text7 dist/default/production\RelogioComLCDePIC.X.production.obj
+atoi@sign 21 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_data_horario 60 0 BANK0 1 bssBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_maquinaEstado 1718 0 CODE 0 text12 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_ofi1_SetDDRamAddr 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_WriteDataXLCD 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_ofi1_Delay10TCYx 1A28 0 CODE 0 text41 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_DelayFor18TCY 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\RelogioComLCDePIC.X.production.obj
+_verificaAnoBissexto 14CC 0 CODE 0 text2 dist/default/production\RelogioComLCDePIC.X.production.obj
+atualiza_Tela@troca_ou_nao 97 0 BANK0 1 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\RelogioComLCDePIC.X.production.obj
+sprintf@val 28 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_estado 3D 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_botaoHora 38 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+crc16@data_p 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_setaDespertador 136E 0 CODE 0 text3 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_putrsXLCD 1584 0 CODE 0 text5 dist/default/production\RelogioComLCDePIC.X.production.obj
+_acionaDespertador 18C2 0 CODE 0 text11 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_putrsXLCD 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\RelogioComLCDePIC.X.production.obj
+SetDDRamAddr@DDaddr 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_SetDDRamAddr 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+strlen@s 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_pegaHoraData 45 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_trataComando 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_ofi1_printaDisplay 1A48 0 CODE 0 text38 dist/default/production\RelogioComLCDePIC.X.production.obj
+__pdataBANK0 99 0 BANK0 1 dataBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_WriteDataXLCD 17D8 0 CODE 0 text6 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_OpenXLCD 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_DelayFor18TCY 1A40 0 CODE 0 text35 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_enviaByte 19B2 0 CODE 0 text26 dist/default/production\RelogioComLCDePIC.X.production.obj
+___awmod@counter 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_putrsXLCD 1528 0 CODE 0 text5 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_enviaByte 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_memcpy 175A 0 CODE 0 text18 dist/default/production\RelogioComLCDePIC.X.production.obj
+WriteDataXLCD@data 18 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_init_XLCD 19D0 0 CODE 0 text27 dist/default/production\RelogioComLCDePIC.X.production.obj
+sprintf@flag 26 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+sprintf@prec 27 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_tx_data 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext10 15DC 0 CODE 0 text10 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext11 18C2 0 CODE 0 text11 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext12 16D2 0 CODE 0 text12 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext13 1462 0 CODE 0 text13 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext14 188A 0 CODE 0 text14 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext15 866 0 CODE 0 text15 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext16 1816 0 CODE 0 text16 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext17 1A28 0 CODE 0 text17 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext18 175A 0 CODE 0 text18 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext19 1924 0 CODE 0 text19 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext20 108C 0 CODE 0 text20 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext21 115E 0 CODE 0 text21 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext22 1976 0 CODE 0 text22 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext23 1950 0 CODE 0 text23 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext24 13F2 0 CODE 0 text24 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext25 136E 0 CODE 0 text25 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext26 1994 0 CODE 0 text26 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext27 19B2 0 CODE 0 text27 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext28 122C 0 CODE 0 text28 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext29 17D8 0 CODE 0 text29 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext30 162E 0 CODE 0 text30 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext31 1A30 0 CODE 0 text31 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext32 19F8 0 CODE 0 text32 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext33 19D0 0 CODE 0 text33 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext34 1850 0 CODE 0 text34 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext35 1A38 0 CODE 0 text35 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext36 1A08 0 CODE 0 text36 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext38 1A40 0 CODE 0 text38 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext39 1680 0 CODE 0 text39 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext40 1A48 0 CODE 0 text40 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext41 1A18 0 CODE 0 text41 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_atualiza_Tela 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_init_XLCD 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+crc16@length 19 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+___awdiv 136E 0 CODE 0 text25 dist/default/production\RelogioComLCDePIC.X.production.obj
+___awmod 13F2 0 CODE 0 text24 dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwdiv 15DC 0 CODE 0 text10 dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwmod 1718 0 CODE 0 text9 dist/default/production\RelogioComLCDePIC.X.production.obj
+strlen@cp 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\RelogioComLCDePIC.X.production.obj
+converteAnoString@ano 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_SetDDRamAddr 1680 0 CODE 0 text30 dist/default/production\RelogioComLCDePIC.X.production.obj
+Delay10KTCYx@unit 18 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_trataComando B12 0 CODE 0 text15 dist/default/production\RelogioComLCDePIC.X.production.obj
+?_atoi 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\RelogioComLCDePIC.X.production.obj
+___wmul@multiplier 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_LATBbits F8A 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_enviaByte 1994 0 CODE 0 text26 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\RelogioComLCDePIC.X.production.obj
+main@botao 98 0 BANK0 1 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwdiv@divisor 19 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_setaDespertador 12D0 0 CODE 0 text3 dist/default/production\RelogioComLCDePIC.X.production.obj
+_init_XLCD 19B2 0 CODE 0 text27 dist/default/production\RelogioComLCDePIC.X.production.obj
+_strlen 1816 0 CODE 0 text16 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\RelogioComLCDePIC.X.production.obj
+_converteAnoString 18F6 0 CODE 0 text7 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_calculaCRCBUFFRESP 1950 0 CODE 0 text19 dist/default/production\RelogioComLCDePIC.X.production.obj
+stackhi 7FF 0 ABS 0 - C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+stacklo AB 0 ABS 0 - C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+__Lintcode 4 0 CODE 0 intcode dist/default/production\RelogioComLCDePIC.X.production.obj
+_versao A5 0 BANK0 1 dataBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+i1_printaDisplay 1A40 0 CODE 0 text38 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_atualiza_Tela CEE 0 CODE 0 text4 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__pbssCOMRAM 2F 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_Delay10TCYx 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_memcpy 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_OpenXLCD 122C 0 CODE 0 text28 dist/default/production\RelogioComLCDePIC.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_Delay1KTCYx 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_virouDia 48 0 COMRAM 1 dataCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_WriteCmdXLCD 17D8 0 CODE 0 text29 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_verificaAnoBissexto 1528 0 CODE 0 text2 dist/default/production\RelogioComLCDePIC.X.production.obj
+end_of_initialization 15CE 0 CODE 0 cinit dist/default/production\RelogioComLCDePIC.X.production.obj
+verificaCRCBUFFCOM@crc1 26 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+verificaCRCBUFFCOM@crc2 28 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_printaDisplay 1A28 0 CODE 0 text17 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_OpenXLCD 12D0 0 CODE 0 text28 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_verificaCRCBUFFCOM 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+___awdiv@quotient 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+?___awdiv 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+?___awmod 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+___lwdiv@dividend 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+?___lwdiv 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+?___lwmod 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\RelogioComLCDePIC.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+_calculaCRCBUFFRESP 1924 0 CODE 0 text19 dist/default/production\RelogioComLCDePIC.X.production.obj
+___awmod@dividend 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_strlen 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\RelogioComLCDePIC.X.production.obj
+__pcinit 1584 0 CODE 0 cinit dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext0 F70 0 CODE 0 text0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext1 E40 0 CODE 0 text1 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext2 14CC 0 CODE 0 text2 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext3 12D0 0 CODE 0 text3 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext4 B12 0 CODE 0 text4 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext5 1528 0 CODE 0 text5 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext6 179A 0 CODE 0 text6 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext7 18F6 0 CODE 0 text7 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext8 CEE 0 CODE 0 text8 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ptext9 1718 0 CODE 0 text9 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/production\RelogioComLCDePIC.X.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\Marco\AppData\Local\Temp\sc8c.obj
+_sprintf CEE 0 CODE 0 text8 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_tx_data 18C2 0 CODE 0 text14 dist/default/production\RelogioComLCDePIC.X.production.obj
+_BUFFCOM 3E 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lpowerup F6 0 CODE 0 powerup dist/default/production\RelogioComLCDePIC.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\RelogioComLCDePIC.X.production.obj
+sprintf@ap 24 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+sprintf@sp 83 0 BANK0 1 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+_isdigit 1976 0 CODE 0 text22 dist/default/production\RelogioComLCDePIC.X.production.obj
+_DelayPORXLCD 1A30 0 CODE 0 text31 dist/default/production\RelogioComLCDePIC.X.production.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\RelogioComLCDePIC.X.production.obj
+_pic_isr 18 0 CODE 0 intcodelo dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_WriteCmdXLCD 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+calculaCRCBUFFRESP@crc 24 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+Delay10TCYx@unit 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_trata_relogio_data F70 0 CODE 0 text1 dist/default/production\RelogioComLCDePIC.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of__initialization 15CE 0 CODE 0 cinit dist/default/production\RelogioComLCDePIC.X.production.obj
+___awmod@divisor 19 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+enviaByte@BYTE 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_horarioDespertador 2F 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_setaDespertador 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\RelogioComLCDePIC.X.production.obj
+crc16@i 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+?_crc16 17 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__pidataBANK0 19E6 0 CODE 0 idataBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_ofi1_printaDisplay 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/production\RelogioComLCDePIC.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_WriteCmdXLCD 1816 0 CODE 0 text29 dist/default/production\RelogioComLCDePIC.X.production.obj
+sprintf@c 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+sprintf@f 85 0 BANK0 1 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_DelayPORXLCD 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_atoi 122C 0 CODE 0 text21 dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_main 108C 0 CODE 0 text0 dist/default/production\RelogioComLCDePIC.X.production.obj
+isdigit@c 19 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_dpowers 80B 0 SMALLCONST 0 smallconst dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_crc16 115E 0 CODE 0 text20 dist/default/production\RelogioComLCDePIC.X.production.obj
+?_sprintf 83 0 BANK0 1 cstackBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+_trata_relogio_data E40 0 CODE 0 text1 dist/default/production\RelogioComLCDePIC.X.production.obj
+_isdigit$1102 18 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_RCREG FAE 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_RCSTA FAB 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_SPBRG FAF 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_TXREG FAD 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+_TXSTA FAC 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\RelogioComLCDePIC.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\RelogioComLCDePIC.X.production.obj
+_crc16 108C 0 CODE 0 text20 dist/default/production\RelogioComLCDePIC.X.production.obj
+_tela_atual 35 0 COMRAM 1 bssCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__size_of_printaDisplay 0 0 ABS 0 - dist/default/production\RelogioComLCDePIC.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+atoi@a 22 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+atoi@s 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+i1_SetDDRamAddr 1680 0 CODE 0 text39 dist/default/production\RelogioComLCDePIC.X.production.obj
+_dias_mes 99 0 BANK0 1 dataBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__initialization 1584 0 CODE 0 cinit dist/default/production\RelogioComLCDePIC.X.production.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\RelogioComLCDePIC.X.production.obj
+__pdataCOMRAM 48 0 COMRAM 1 dataCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__end_of_DelayPORXLCD 1A38 0 CODE 0 text31 dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\RelogioComLCDePIC.X.production.obj
+___wmul@product 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hsmallconst 866 0 SMALLCONST 0 smallconst dist/default/production\RelogioComLCDePIC.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\RelogioComLCDePIC.X.production.obj
+__Hintcode 4 0 CODE 0 intcode dist/default/production\RelogioComLCDePIC.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 E2 1
+idloc 0 200000 200000 8 1
+text15 0 866 866 11EB 1
+cstackCOMRAM 1 1 1 49 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 4B 1
+smallconst 0 800 800 66 1
+config 0 300000 300000 E 1

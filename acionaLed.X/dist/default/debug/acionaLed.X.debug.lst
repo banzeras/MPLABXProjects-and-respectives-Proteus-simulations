@@ -1,0 +1,378 @@
+
+
+Microchip Technology PIC18 LITE Macro Assembler V1.41 build -162212810 
+                                                                                               Thu Mar 08 22:54:42 2018
+
+Microchip Technology Omniscient Code Generator v1.41 (Free mode) build 201701250102
+     1                           	processor	18F4550
+     2                           	fnconf	rparam,??,?,0
+     3                           	opt	pw 120
+     4                           	opt	lm
+     5                           	psect	cinit,global,reloc=2,class=CODE,delta=1
+     6                           	psect	cstackCOMRAM,global,class=COMRAM,space=1,delta=1,noexec
+     7                           	psect	text0,global,reloc=2,class=CODE,delta=1
+     8                           	psect	text1,global,reloc=2,class=CODE,delta=1
+     9                           	psect	intsave_regs,global,class=BIGRAM,space=1,delta=1,noexec
+    10                           	psect	rparam,global,class=COMRAM,space=1,delta=1,noexec
+    11  0000                     
+    12                           ; Version 1.41
+    13                           ; Generated 25/01/2017 GMT
+    14                           ; 
+    15                           ; Copyright © 2017, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    16                           ; All rights reserved.
+    17                           ; 
+    18                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    19                           ; 
+    20                           ; Redistribution and use in source and binary forms, with or without modification, are
+    21                           ; permitted provided that the following conditions are met:
+    22                           ; 
+    23                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    24                           ;        conditions and the following disclaimer.
+    25                           ; 
+    26                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    27                           ;        of conditions and the following disclaimer in the documentation and/or other
+    28                           ;        materials provided with the distribution.
+    29                           ; 
+    30                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    31                           ;        software without specific prior written permission.
+    32                           ; 
+    33                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    34                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    35                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    36                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    37                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    38                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    39                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    40                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    41                           ; 
+    42                           ; 
+    43                           ; Code-generator required, PIC18F4550 Definitions
+    44                           ; 
+    45                           ; SFR Addresses
+    46  0000                     _TRISBbits	set	3987
+    47  0000                     _PORTBbits	set	3969
+    48                           
+    49                           ; #config settings
+    50                           
+    51                           	psect	cinit
+    52  007F9E                     __pcinit:
+    53                           	opt stack 0
+    54  007F9E                     start_initialization:
+    55                           	opt stack 0
+    56  007F9E                     __initialization:
+    57                           	opt stack 0
+    58  007F9E                     end_of_initialization:
+    59                           	opt stack 0
+    60  007F9E                     __end_of__initialization:
+    61                           	opt stack 0
+    62  007F9E  0100               	movlb	0
+    63  007FA0  EFD2  F03F         	goto	_main	;jump to C main() function
+    64                           
+    65                           	psect	cstackCOMRAM
+    66  000001                     __pcstackCOMRAM:
+    67                           	opt stack 0
+    68  000001                     ??_acionaLed:
+    69  000001                     
+    70                           ; 1 bytes @ 0x0
+    71  000001                     	ds	2
+    72  000003                     acionaLed@estado:
+    73                           	opt stack 0
+    74                           
+    75                           ; 1 bytes @ 0x2
+    76  000003                     	ds	1
+    77  000004                     
+    78                           ; 1 bytes @ 0x3
+    79 ;;
+    80 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+    81 ;;
+    82 ;; *************** function _main *****************
+    83 ;; Defined at:
+    84 ;;		line 33 in file "main.c"
+    85 ;; Parameters:    Size  Location     Type
+    86 ;;		None
+    87 ;; Auto vars:     Size  Location     Type
+    88 ;;		None
+    89 ;; Return value:  Size  Location     Type
+    90 ;;                  1    wreg      void 
+    91 ;; Registers used:
+    92 ;;		wreg, status,2, status,0, cstack
+    93 ;; Tracked objects:
+    94 ;;		On entry : 0/0
+    95 ;;		On exit  : 0/0
+    96 ;;		Unchanged: 0/0
+    97 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+    98 ;;      Params:         0       0       0       0       0       0       0       0       0
+    99 ;;      Locals:         0       0       0       0       0       0       0       0       0
+   100 ;;      Temps:          0       0       0       0       0       0       0       0       0
+   101 ;;      Totals:         0       0       0       0       0       0       0       0       0
+   102 ;;Total ram usage:        0 bytes
+   103 ;; Hardware stack levels required when called:    1
+   104 ;; This function calls:
+   105 ;;		_acionaLed
+   106 ;; This function is called by:
+   107 ;;		Startup code after reset
+   108 ;; This function uses a non-reentrant model
+   109 ;;
+   110                           
+   111                           	psect	text0
+   112  007FA4                     __ptext0:
+   113                           	opt stack 0
+   114  007FA4                     _main:
+   115                           	opt stack 30
+   116                           
+   117                           ;main.c: 34: TRISBbits.TRISB0 = 0;
+   118                           
+   119                           ;incstack = 0
+   120  007FA4  9093               	bcf	3987,0,c	;volatile
+   121                           
+   122                           ;main.c: 35: TRISBbits.TRISB1 = 1;
+   123  007FA6  8293               	bsf	3987,1,c	;volatile
+   124  007FA8                     l628:
+   125                           
+   126                           ;main.c: 39: acionaLed();
+   127  007FA8  ECD7  F03F         	call	_acionaLed	;wreg free
+   128  007FAC  D7FD               	goto	l628
+   129  007FAE                     __end_of_main:
+   130                           	opt stack 0
+   131                           
+   132 ;; *************** function _acionaLed *****************
+   133 ;; Defined at:
+   134 ;;		line 16 in file "main.c"
+   135 ;; Parameters:    Size  Location     Type
+   136 ;;		None
+   137 ;; Auto vars:     Size  Location     Type
+   138 ;;  estado          1    2[COMRAM] unsigned char 
+   139 ;; Return value:  Size  Location     Type
+   140 ;;                  1    wreg      void 
+   141 ;; Registers used:
+   142 ;;		wreg, status,2, status,0
+   143 ;; Tracked objects:
+   144 ;;		On entry : 0/0
+   145 ;;		On exit  : 0/0
+   146 ;;		Unchanged: 0/0
+   147 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   148 ;;      Params:         0       0       0       0       0       0       0       0       0
+   149 ;;      Locals:         1       0       0       0       0       0       0       0       0
+   150 ;;      Temps:          2       0       0       0       0       0       0       0       0
+   151 ;;      Totals:         3       0       0       0       0       0       0       0       0
+   152 ;;Total ram usage:        3 bytes
+   153 ;; Hardware stack levels used:    1
+   154 ;; This function calls:
+   155 ;;		Nothing
+   156 ;; This function is called by:
+   157 ;;		_main
+   158 ;; This function uses a non-reentrant model
+   159 ;;
+   160                           
+   161                           	psect	text1
+   162  007FAE                     __ptext1:
+   163                           	opt stack 0
+   164  007FAE                     _acionaLed:
+   165                           	opt stack 30
+   166                           
+   167                           ;main.c: 17: PORTBbits.RB0 = 0;
+   168                           
+   169                           ;incstack = 0
+   170  007FAE  9081               	bcf	3969,0,c	;volatile
+   171                           
+   172                           ;main.c: 18: char estado = PORTBbits.RB1;
+   173  007FB0  0E00               	movlw	0
+   174  007FB2  B281               	btfsc	3969,1,c	;volatile
+   175  007FB4  0E01               	movlw	1
+   176  007FB6  6E03               	movwf	acionaLed@estado,c
+   177                           
+   178                           ;main.c: 21: if(estado == 1){
+   179  007FB8  0403               	decf	acionaLed@estado,w,c
+   180  007FBA  A4D8               	btfss	status,2,c
+   181  007FBC  0012               	return	
+   182                           
+   183                           ;main.c: 22: _delay((unsigned long)((1000)*(20000000/4000.0)));
+   184  007FBE  0E1A               	movlw	26
+   185  007FC0  6E02               	movwf	(??_acionaLed+1)& (0+255),c
+   186  007FC2  0E5E               	movlw	94
+   187  007FC4  6E01               	movwf	??_acionaLed& (0+255),c
+   188  007FC6  0E6E               	movlw	110
+   189  007FC8                     u47:
+   190  007FC8  2EE8               	decfsz	wreg,f,c
+   191  007FCA  D7FE               	bra	u47
+   192  007FCC  2E01               	decfsz	??_acionaLed& (0+255),f,c
+   193  007FCE  D7FC               	bra	u47
+   194  007FD0  2E02               	decfsz	(??_acionaLed+1)& (0+255),f,c
+   195  007FD2  D7FA               	bra	u47
+   196  007FD4  D000               	nop2	
+   197                           
+   198                           ;main.c: 23: PORTBbits.RB0 = 1;
+   199  007FD6  8081               	bsf	3969,0,c	;volatile
+   200                           
+   201                           ;main.c: 24: _delay((unsigned long)((1000)*(20000000/4000.0)));
+   202  007FD8  0E1A               	movlw	26
+   203  007FDA  6E02               	movwf	(??_acionaLed+1)& (0+255),c
+   204  007FDC  0E5E               	movlw	94
+   205  007FDE  6E01               	movwf	??_acionaLed& (0+255),c
+   206  007FE0  0E6E               	movlw	110
+   207  007FE2                     u57:
+   208  007FE2  2EE8               	decfsz	wreg,f,c
+   209  007FE4  D7FE               	bra	u57
+   210  007FE6  2E01               	decfsz	??_acionaLed& (0+255),f,c
+   211  007FE8  D7FC               	bra	u57
+   212  007FEA  2E02               	decfsz	(??_acionaLed+1)& (0+255),f,c
+   213  007FEC  D7FA               	bra	u57
+   214  007FEE  D000               	nop2	
+   215                           
+   216                           ;main.c: 25: estado = !estado;
+   217  007FF0  5003               	movf	acionaLed@estado,w,c
+   218  007FF2  A4D8               	btfss	status,2,c
+   219  007FF4  D002               	goto	u20
+   220  007FF6  0E01               	movlw	1
+   221  007FF8  D001               	goto	u30
+   222  007FFA                     u20:
+   223  007FFA  0E00               	movlw	0
+   224  007FFC                     u30:
+   225  007FFC  6E03               	movwf	acionaLed@estado,c
+   226  007FFE  0012               	return	
+   227  008000                     __end_of_acionaLed:
+   228                           	opt stack 0
+   229  0000                     wreg	equ	0xFE8
+   230                           status	equ	0xFD8
+   231                           wreg	equ	0xFE8
+   232                           status	equ	0xFD8
+   233                           
+   234                           	psect	rparam
+   235  0000                     wreg	equ	0xFE8
+   236                           status	equ	0xFD8
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMRAM           95      3       3
+    BANK0           160      0       0
+    BANK1           256      0       0
+    BANK2           256      0       0
+    BANK3           256      0       0
+    BANK4           256      0       0
+    BANK5           256      0       0
+    BANK6           256      0       0
+    BANK7           256      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMRAM
+
+    _main->_acionaLed
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _main in BANK5
+
+    None.
+
+Critical Paths under _main in BANK6
+
+    None.
+
+Critical Paths under _main in BANK7
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0      30
+                          _acionaLed
+ ---------------------------------------------------------------------------------
+ (1) _acionaLed                                            3     3      0      30
+                                              0 COMRAM     3     3      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 1
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _acionaLed
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMRAM           5F      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+COMRAM              5F      3       3       1        3.2%
+STACK                0      0       0       2        0.0%
+DATA                 0      0       0       3        0.0%
+BITBANK0            A0      0       0       4        0.0%
+BANK0               A0      0       0       5        0.0%
+BITBANK1           100      0       0       6        0.0%
+BANK1              100      0       0       7        0.0%
+BITBANK2           100      0       0       8        0.0%
+BANK2              100      0       0       9        0.0%
+BITBANK3           100      0       0      10        0.0%
+BANK3              100      0       0      11        0.0%
+BITBANK4           100      0       0      12        0.0%
+BANK4              100      0       0      13        0.0%
+BITBANK5           100      0       0      14        0.0%
+BANK5              100      0       0      15        0.0%
+BITBANK6           100      0       0      16        0.0%
+BANK6              100      0       0      17        0.0%
+BITBANK7           100      0       0      18        0.0%
+BANK7              100      0       0      19        0.0%
+ABS                  0      0       0      20        0.0%
+BIGRAM             7FF      0       0      21        0.0%
+BITSFR               0      0       0     200        0.0%
+SFR                  0      0       0     200        0.0%
+
+
+Microchip Technology PIC18 Macro Assembler V1.41 build -162212810 
+Symbol Table                                                                                   Thu Mar 08 22:54:42 2018
+
+                     u20 7FFA                       u30 7FFC                       u47 7FC8  
+                     u57 7FE2                      l628 7FA8                      wreg 000FE8  
+                   _main 7FA4                     start 0000             ___param_bank 000000  
+                  ?_main 0001                    status 000FD8          __initialization 7F9E  
+           __end_of_main 7FAE                   ??_main 0004            __activetblptr 000000  
+             __accesstop 0060  __end_of__initialization 7F9E            ___rparam_used 000001  
+     __size_of_acionaLed 0052           __pcstackCOMRAM 0001        __end_of_acionaLed 8000  
+                __Hparam 0000                  __Lparam 0000                  __pcinit 7F9E  
+                __ramtop 0800                  __ptext0 7FA4                  __ptext1 7FAE  
+   end_of_initialization 7F9E                _PORTBbits 000F81                _TRISBbits 000F93  
+    start_initialization 7F9E                _acionaLed 7FAE               ?_acionaLed 0001  
+               __Hrparam 0000                 __Lrparam 0000              ??_acionaLed 0001  
+          __size_of_main 000A          acionaLed@estado 0003  

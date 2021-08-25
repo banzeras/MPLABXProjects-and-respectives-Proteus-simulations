@@ -1,0 +1,193 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"58 C:\Users\Marco\MPLABXProjects\uart.X\main.c
+[v _enviaByteTeste enviaByteTeste `(v  1 e 1 0 ]
+"65
+[v _calculaCRCBUFFRESP calculaCRCBUFFRESP `(v  1 e 1 0 ]
+"73
+[v _trataComando trataComando `(v  1 e 1 0 ]
+"159
+[v _verificaCRCBUFFCOM verificaCRCBUFFCOM `(v  1 e 1 0 ]
+"183
+[v _maquinaEstado maquinaEstado `(v  1 e 1 0 ]
+"220
+[v _main main `(v  1 e 1 0 ]
+"252
+[v _enviaByte enviaByte `(v  1 e 1 0 ]
+"267
+[v _tx_data tx_data `(v  1 e 1 0 ]
+"282
+[v _SerialRxPinInterrupt SerialRxPinInterrupt `II(v  1 e 1 0 ]
+[s S35 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3829 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f4550.h
+[s S42 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S49 . 1 `S35 1 . 1 0 `S42 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES49  1 e 1 @3988 ]
+[s S120 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4441
+[s S129 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S135 . 1 `S120 1 . 1 0 `S129 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES135  1 e 1 @3998 ]
+"4876
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"5085
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"5340
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5351
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5362
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+[s S71 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8476
+[s S80 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S89 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S93 . 1 `S71 1 . 1 0 `S80 1 . 1 0 `S89 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES93  1 e 1 @4082 ]
+"9658
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"9772
+[v _RCIE RCIE `VEb  1 e 0 @31981 ]
+"9774
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"9776
+[v _RCIP RCIP `VEb  1 e 0 @31997 ]
+"10174
+[v _TXIF TXIF `VEb  1 e 0 @31988 ]
+"25 C:\Users\Marco\MPLABXProjects\uart.X\main.c
+[v _i i `ui  1 e 2 0 ]
+"49
+[v _BUFFCOM BUFFCOM `[7]uc  1 e 7 0 ]
+[v _BUFFRESP BUFFRESP `[7]uc  1 e 7 0 ]
+"51
+[v _estado estado `uc  1 e 1 0 ]
+"53
+[v _versao versao `uc  1 e 1 0 ]
+"54
+[v _revisao revisao `uc  1 e 1 0 ]
+"220
+[v _main main `(v  1 e 1 0 ]
+{
+"249
+} 0
+"183
+[v _maquinaEstado maquinaEstado `(v  1 e 1 0 ]
+{
+"218
+} 0
+"159
+[v _verificaCRCBUFFCOM verificaCRCBUFFCOM `(v  1 e 1 0 ]
+{
+"162
+[v verificaCRCBUFFCOM@CRC_OK CRC_OK `uc  1 a 1 15 ]
+"179
+} 0
+"267
+[v _tx_data tx_data `(v  1 e 1 0 ]
+{
+"269
+[v tx_data@cont cont `i  1 a 2 15 ]
+"278
+} 0
+"73
+[v _trataComando trataComando `(v  1 e 1 0 ]
+{
+"155
+} 0
+"65
+[v _calculaCRCBUFFRESP calculaCRCBUFFRESP `(v  1 e 1 0 ]
+{
+"71
+} 0
+"252
+[v _enviaByte enviaByte `(v  1 e 1 0 ]
+{
+"253
+[v enviaByte@BYTE BYTE `uc  1 a 1 wreg ]
+[v enviaByte@BYTE BYTE `uc  1 a 1 wreg ]
+"252
+[v enviaByte@BYTE BYTE `uc  1 a 1 15 ]
+"263
+} 0
+"282
+[v _SerialRxPinInterrupt SerialRxPinInterrupt `II(v  1 e 1 0 ]
+{
+"306
+} 0
+"58
+[v _enviaByteTeste enviaByteTeste `(v  1 e 1 0 ]
+{
+"59
+[v enviaByteTeste@BYTE BYTE `uc  1 a 1 wreg ]
+[v enviaByteTeste@BYTE BYTE `uc  1 a 1 wreg ]
+"58
+[v enviaByteTeste@BYTE BYTE `uc  1 a 1 0 ]
+"63
+} 0
